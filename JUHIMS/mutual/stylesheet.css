@@ -1,0 +1,216 @@
+﻿html
+{
+   background-color: rgb(237, 237, 237);
+}
+#body
+{
+    margin-top: 80px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.w3-top
+{
+    position:fixed;
+}
+.login
+{
+    margin-top:100px;
+}
+
+.input
+{
+    margin-top:10px;
+    border: 1px solid #ccc;
+    
+}
+
+.input:focus 
+{
+  background-color: rgb(232, 232, 232);
+}
+
+.login
+{
+    text-align: center;
+}
+
+.login #login
+{
+    margin-top: 15px;
+    margin-left: 45px;
+    border: none;
+    padding: 10px 24px;
+    background-color: rgb(232, 232, 232);
+    color:Black;
+    text-align: center;
+    font-size: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.button
+{
+    border: none;
+    padding: 10px 24px;
+    background-color: #424645;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-top: 5px;
+}
+
+.button:hover {
+  background-color: rgb(212, 212, 212);
+  color: black;
+}
+
+div
+{
+   font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif
+}
+
+.container
+{
+    padding:20px;
+}
+
+.about
+{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.container h4
+{
+    border-bottom:0.25px solid black;
+    text-align:center;
+    
+}
+
+.table
+{
+    margin-top: 200px;
+    margin-left: 530px;
+}
+
+td
+{
+        border: 0.5px solid black;
+        padding: 10px;
+}
+
+ .search
+{
+    text-align:center;
+}
+
+
+#search
+{
+    margin-left: 200px;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow:hidden;
+  margin-left:100px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.subform
+{
+    margin: 90px 40px 20px 40px;
+}
+
+.infoinput
+{
+    margin-bottom: 5px;
+    width: 205px;
+    margin-right:5px;
+}
+
+.invisible
+{
+    border:none;
+    text-align: center;
+    width: 220px;
+}
+
+.dropbtn2 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow:hidden;
+  margin-left:260px;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content2 a:hover {background-color: #f1f1f1;}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+#EmployeeStatus
+{
+    margin-bottom:5px;
+}
+
+#RequestsUpdates
+{
+    margin-left: 450px;
+}
+
+#WrongPassword
+{
+visibility:hidden;
+color: red;
+}

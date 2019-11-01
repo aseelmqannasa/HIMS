@@ -1,0 +1,6 @@
+c:\users\aseel\onedrive\documents\visual studio 2013\Projects\JUHIMS\JUHIMS\bin\JUHIMS.dll.config
+c:\users\aseel\onedrive\documents\visual studio 2013\Projects\JUHIMS\JUHIMS\bin\JUHIMS.dll
+c:\users\aseel\onedrive\documents\visual studio 2013\Projects\JUHIMS\JUHIMS\bin\JUHIMS.pdb
+c:\users\aseel\onedrive\documents\visual studio 2013\Projects\JUHIMS\JUHIMS\obj\Debug\JUHIMS.csprojResolveAssemblyReference.cache
+c:\users\aseel\onedrive\documents\visual studio 2013\Projects\JUHIMS\JUHIMS\obj\Debug\JUHIMS.dll
+c:\users\aseel\onedrive\documents\visual studio 2013\Projects\JUHIMS\JUHIMS\obj\Debug\JUHIMS.pdb
