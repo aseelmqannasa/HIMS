@@ -1,0 +1,136 @@
+﻿    <%--Renew Subscription--%>
+    <asp:GridView ID="RenewSubscription" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="RequestID" DataSourceID="RenewSubscriptionSource" style="margin-left: 190px" Width="1089px" OnSelectedIndexChanged="RenewSubscription_SelectedIndexChanged">
+        <Columns>
+            <asp:CommandField ShowSelectButton="True" />
+            <asp:BoundField DataField="RequestID" HeaderText="RequestID" InsertVisible="False" ReadOnly="True" SortExpression="RequestID" />
+            <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+            <asp:BoundField DataField="RequestDate" HeaderText="RequestDate" SortExpression="RequestDate" />
+        </Columns>
+        <EmptyDataTemplate>
+            No Requests
+        </EmptyDataTemplate>
+    </asp:GridView>
+    <asp:SqlDataSource ID="RenewSubscriptionSource" runat="server" ConnectionString="<%$ ConnectionStrings:HIMSConnectionString %>" SelectCommand="SELECT [RequestID], [Status], [RequestDate] FROM [RenewSubscriptionRequest]"></asp:SqlDataSource>
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="View1" runat="server" class="ebutton" Text="View" Width="155px" />
+    <asp:Button ID="Approve1" runat="server" class="ebutton" BackColor="Green" Text="Approve" Width="155px" />
+    <asp:Button ID="RequestPayment1" runat="server" class="ebutton" Text="Request Payment" Width="155px" />
+    <asp:Button ID="RequestInfo1" runat="server" class="ebutton" Text="Request Documents" Width="161px" />
+    <asp:Button ID="Decline1" runat="server" class="ebutton" BackColor="Red" Text="Decline" Width="155px" />
+    <br /><br />
+
+
+    <%-- Cancel Subscription --%>
+    <asp:GridView ID="CancelSubscription" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="RequestID" DataSourceID="CancelSubscriptionSource" style="margin-left: 190px" Width="1089px">
+        <Columns>
+            <asp:CommandField ShowSelectButton="True" />
+            <asp:BoundField DataField="RequestID" HeaderText="RequestID" InsertVisible="False" ReadOnly="True" SortExpression="RequestID" />
+            <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+            <asp:BoundField DataField="RequestDate" HeaderText="RequestDate" SortExpression="RequestDate" />
+        </Columns>
+        <EmptyDataTemplate>
+            No Requests
+        </EmptyDataTemplate>
+    </asp:GridView>
+    <asp:SqlDataSource ID="CancelSubscriptionSource" runat="server" ConnectionString="<%$ ConnectionStrings:HIMSConnectionString %>" SelectCommand="SELECT [RequestID], [Status], [RequestDate] FROM [CancelSubscriptionRequest]"></asp:SqlDataSource>
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="View2" runat="server" CssClass="ebutton" Text="View" Width="155px" />
+    <asp:Button ID="Approve2" runat="server" CssClass="ebutton" BackColor="Green" Text="Approve" Width="155px" />
+    <asp:Button ID="RequestPayment2" runat="server" CssClass="ebutton" Text="Request Payment" Width="155px" />
+    <asp:Button ID="RequestInfo2" runat="server" CssClass="ebutton" Text="Request Documents" Width="161px" />
+    <asp:Button ID="Decline2" runat="server" CssClass="ebutton" BackColor="Red" Text="Decline" Width="155px" />
+    <br /><br />
+
+
+    <%-- Add Beneficiaries --%>
+    <asp:GridView ID="AddBeneficiaries" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="RequestID" DataSourceID="AddBeneficiariesSource" style="margin-left: 190px" Width="1089px">
+        <Columns>
+            <asp:CommandField ShowSelectButton="True" />
+            <asp:BoundField DataField="RequestID" HeaderText="RequestID" InsertVisible="False" ReadOnly="True" SortExpression="RequestID" />
+            <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+            <asp:BoundField DataField="RequestDate" HeaderText="RequestDate" SortExpression="RequestDate" />
+        </Columns>
+        <EmptyDataTemplate>
+            No Requests
+        </EmptyDataTemplate>
+    </asp:GridView>
+    <asp:SqlDataSource ID="AddBeneficiariesSource" runat="server" ConnectionString="<%$ ConnectionStrings:HIMSConnectionString %>" SelectCommand="SELECT [RequestID], [Status], [RequestDate] FROM [AddBeneficiariesRequest]"></asp:SqlDataSource>
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="View3" runat="server" CssClass="ebutton" Text="View" Width="155px" />
+    <asp:Button ID="Approve3" runat="server" CssClass="ebutton" BackColor="Green" Text="Approve" Width="155px" />
+    <asp:Button ID="RequestPayment3" runat="server" CssClass="ebutton" Text="Request Payment" Width="155px" />
+    <asp:Button ID="RequestInfo3" runat="server" CssClass="ebutton" Text="Request Documents" Width="161px" />
+    <asp:Button ID="Decline3" runat="server" CssClass="ebutton" BackColor="Red" Text="Decline" Width="155px" />
+    <br /><br />
+
+
+    <%-- Remove Beneficiaries --%>
+    <asp:GridView ID="RemoveBeneficiaries" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="RequestID" DataSourceID="RemoveBeneficiariesSource" style="margin-left: 190px" Width="1089px">
+        <Columns>
+            <asp:CommandField ShowSelectButton="True" />
+            <asp:BoundField DataField="RequestID" HeaderText="RequestID" InsertVisible="False" ReadOnly="True" SortExpression="RequestID" />
+            <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+            <asp:BoundField DataField="RequestDate" HeaderText="RequestDate" SortExpression="RequestDate" />
+        </Columns>
+        <EmptyDataTemplate>
+            No Requests
+        </EmptyDataTemplate>
+    </asp:GridView>
+    <asp:SqlDataSource ID="RemoveBeneficiariesSource" runat="server" ConnectionString="<%$ ConnectionStrings:HIMSConnectionString %>" SelectCommand="SELECT [RequestID], [Status], [RequestDate] FROM [RemoveBeneficiariesRequest]"></asp:SqlDataSource>
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="View4" runat="server" CssClass="ebutton" Text="View" Width="155px" />
+    <asp:Button ID="Approve4" runat="server" CssClass="ebutton" BackColor="Green" Text="Approve" Width="155px" />
+    <asp:Button ID="RequestPayment4" runat="server" CssClass="ebutton" Text="Request Payment" Width="155px" />
+    <asp:Button ID="RequestInfo4" runat="server" CssClass="ebutton" Text="Request Documents" Width="161px" />
+    <asp:Button ID="Decline4" runat="server" CssClass="ebutton" BackColor="Red" Text="Decline" Width="155px" />
+    <br /><br />
+
+
+    <%-- Replace Card --%>
+    <asp:GridView ID="ReplaceCard" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="RequestID" DataSourceID="ReplaceCardSource" style="margin-left: 190px" Width="1089px">
+        <Columns>
+            <asp:CommandField ShowSelectButton="True" />
+            <asp:BoundField DataField="RequestID" HeaderText="RequestID" InsertVisible="False" ReadOnly="True" SortExpression="RequestID" />
+            <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+            <asp:BoundField DataField="RequestDate" HeaderText="RequestDate" SortExpression="RequestDate" />
+        </Columns>
+        <EmptyDataTemplate>
+            No Requests
+        </EmptyDataTemplate>
+    </asp:GridView>
+    <asp:SqlDataSource ID="ReplaceCardSource" runat="server" ConnectionString="<%$ ConnectionStrings:HIMSConnectionString %>" SelectCommand="SELECT [RequestID], [Status], [RequestDate] FROM [ReplaceCardRequest]"></asp:SqlDataSource>
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="View5" runat="server" CssClass="ebutton" Text="View" Width="155px" />
+    <asp:Button ID="Approve5" runat="server" CssClass="ebutton" BackColor="Green" Text="Approve" Width="155px" />
+    <asp:Button ID="RequestPayment5" runat="server" CssClass="ebutton" Text="Request Payment" Width="155px" />
+    <asp:Button ID="RequestInfo5" runat="server" CssClass="ebutton" Text="Request Documents" Width="161px" />
+    <asp:Button ID="Decline5" runat="server" CssClass="ebutton" BackColor="Red" Text="Decline" Width="155px" />
+    <br /><br />
+
+
+    <%-- Edit --%>
+    <asp:GridView ID="Edit" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="RequestID" DataSourceID="EditSource" style="margin-left: 190px" Width="1089px">
+        <Columns>
+            <asp:CommandField ShowSelectButton="True" />
+            <asp:BoundField DataField="RequestID" HeaderText="RequestID" InsertVisible="False" ReadOnly="True" SortExpression="RequestID" />
+            <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+            <asp:BoundField DataField="RequestDate" HeaderText="RequestDate" SortExpression="RequestDate" />
+        </Columns>
+        <EmptyDataTemplate>
+            No Requests
+        </EmptyDataTemplate>
+    </asp:GridView>
+    <asp:SqlDataSource ID="EditSource" runat="server" ConnectionString="<%$ ConnectionStrings:HIMSConnectionString %>" SelectCommand="SELECT [RequestID], [Status], [RequestDate] FROM [EditRequest]"></asp:SqlDataSource>
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="View6" runat="server" CssClass="ebutton" Text="View" Width="155px" />
+    <asp:Button ID="Approve6" runat="server" CssClass="ebutton" BackColor="Green" Text="Approve" Width="155px" />
+    <asp:Button ID="RequestPayment6" runat="server" CssClass="ebutton" Text="Request Payment" Width="155px" />
+    <asp:Button ID="RequestInfo6" runat="server" CssClass="ebutton" Text="Request Documents" Width="161px" />
+    <asp:Button ID="Decline6" runat="server" CssClass="ebutton" BackColor="Red" Text="Decline" Width="155px" />
+    <br /><br />
